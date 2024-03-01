@@ -4,9 +4,7 @@ body {
   color: black;
   font-family: 'Poppins', sans-serif;
   box-sizing:  border-box;
-  margin: 0 auto;
   padding: 15px;
-  width: 1300px;
 }
 
 
@@ -15,8 +13,7 @@ header{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 0px;
-  width: 100%vw;
+  
 }
 
 header .service{
@@ -27,6 +24,11 @@ header li {
   display: inline-block;
   margin: 20px;
 }
+#title {
+  flex-direction: column;
+  line-height: 10px;
+}
+
 
 a {
   position: relative;
@@ -37,7 +39,7 @@ a {
 header a:hover {
   color: rgb(11, 235, 243);
   transition: 0.5s all;
-  bottom: 0.5em;
+  
 }
 
 #inscreva-se-btn {
@@ -50,11 +52,7 @@ header a:hover {
   background-color: rgb(11, 235, 243);;
   color: #000;
   transition: 0.5s;
-  font-weight: 550;
-}
-#title {
-  flex-direction: column;
-  line-height: 10px;
+  
 }
 
 h1 {
@@ -283,11 +281,8 @@ main  {
   text-align: center;
 }
 
-/*
-@media screen and (max-width: 780px){
-  body{
-    width: 100%;
-  }
+
+@media screen and (max-width: 867px){
   header{
     display: flex;
     flex-direction: column;
@@ -299,7 +294,7 @@ main  {
   }
   header #title{
     text-align: center;
-    margin-left: 2.5rem;
+    margin-left: 1rem;
     
   }
   
@@ -365,5 +360,9 @@ main  {
   }
 }
 
-
+@media (max-width: 285px){
+  #title {
+    line-height: 30px;
+    }
+}
 
