@@ -245,11 +245,12 @@ form .input-group button{
 
 @media screen and (max-width: 900px) {
   body{
+    padding: 0;
   }
   
   header{
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: -10px;
   }
   header ul{
     position: relative;
@@ -257,7 +258,7 @@ form .input-group button{
   
   #title {
   flex-direction: column;
-  line-height: 30px;
+  line-height: 10px;
   margin-bottom: 25px;  
   }
   
@@ -306,8 +307,11 @@ form .input-group button{
     left: 2rem
   }
 }
-/*
-@media (max-width:500px){
-  
-}
 
+@media (max-width: 380px){
+  header ul{
+    position: relative;
+    left: -07%;
+    text-align: center;
+  }
+}
